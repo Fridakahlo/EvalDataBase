@@ -217,11 +217,11 @@ CREATE TABLE `rooms` (
 --
 
 INSERT INTO `rooms` (`id`, `name`, `area`, `kind_room`, `floor`, `view`, `accessibility`, `cost`, `bathroom`, `bed`) VALUES
-(1, 'Moscou', 28.5, 2, 1, 'Mer', 1, 225, 3, 3),
-(2, 'Paris', 18.5, 1, 1, 'Montagne', 2, 180.5, 1, 1),
-(3, 'Rio', 22.5, 2, 2, 'Mer', 1, 200, 2, 2),
-(4, 'Tokio', 15.7, 1, 2, 'Montagne', 2, 165.6, 1, 2),
-(5, 'Dublin', 25, 2, 3, 'Mer', 2, 215, 2, 3),
+(1, 'Moscou', 28.5, 0, 1, 'Mer', 1, 225, 3, 3),
+(2, 'Paris', 18.5, 1, 1, 'Montagne', 0, 180.5, 1, 1),
+(3, 'Rio', 22.5, 0, 2, 'Mer', 1, 200, 2, 2),
+(4, 'Tokio', 15.7, 1, 2, 'Montagne', 0, 165.6, 1, 2),
+(5, 'Dublin', 25, 0, 3, 'Mer', 0, 215, 2, 3),
 (6, 'Oslo', 19.5, 1, 3, 'Montagne', 1, 190, 3, 1);
 
 -- --------------------------------------------------------
@@ -245,12 +245,12 @@ CREATE TABLE `services` (
 
 INSERT INTO `services` (`id`, `name`, `description`, `cost`, `availability`, `category`) VALUES
 (1, 'Petit Déjeuner en chambre', 'PDJ Continental', 25, 1, 3),
-(2, 'Minibar', '2 paquets de snacks, eau plate et petillant, chocolat, vin blanc et mousseaux, gin et vodka', 85, 2, 3),
+(2, 'Minibar', '2 paquets de snacks, eau plate et petillant, chocolat, vin blanc et mousseaux, gin et vodka', 85, 0, 3),
 (3, 'Bouteille de Champagne', 'Roederer Brut 75 cl et corbeille de fraises', 140, 1, 3),
 (4, 'Pret ordinateur portable', 'HP 234 avec connexion internet et programmes de base', 20, 1, 1),
 (5, 'Massage', '45 min realisé au wellness', 75, 1, 2),
-(6, 'Scort Boy', 'Mission de 2 hr', 245, 2, 4),
-(7, 'Resevation de voiture', 'Categorie a choisir par le client', 25, 2, 4);
+(6, 'Scort Boy', 'Mission de 2 hr', 245, 0, 4),
+(7, 'Resevation de voiture', 'Categorie a choisir par le client', 25, 0, 4);
 
 -- --------------------------------------------------------
 
